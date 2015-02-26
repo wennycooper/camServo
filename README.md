@@ -2,7 +2,7 @@
 RPi + usbCam + opencv face detection + servoBlaster 
 
 ## Requirements
-1. opencv installed
+1. opencv 2.4.x
 2. servoblaster  (https://github.com/richardghirst/PiBits/tree/master/ServoBlaster)
 
 ## Build Instruction:
