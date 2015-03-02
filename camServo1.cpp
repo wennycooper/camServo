@@ -25,8 +25,8 @@ char str2[256];
 void servoTurnLeft()
 {
     //printf("servoTurnLeft() was called\n");
-    //system("echo P1-3=+3 > /dev/servoblaster");
-    sprintf(str1, "P1-3=+3\n");
+    //system("echo P1-24=+3 > /dev/servoblaster");
+    sprintf(str1, "P1-24=+3\n");
     write(fd_sb, str1, strlen(str1));
 
 }
@@ -34,8 +34,8 @@ void servoTurnLeft()
 void servoTurnRight()
 {
     //printf("servoTurnRight() was called\n");
-    //system("echo P1-3=-3 > /dev/servoblaster");
-    sprintf(str1, "P1-3=-3\n");
+    //system("echo P1-24=-3 > /dev/servoblaster");
+    sprintf(str1, "P1-24=-3\n");
     write(fd_sb, str1, strlen(str1));
 
 }
@@ -43,9 +43,9 @@ void servoTurnRight()
 void servoMiddle()
 {
     //printf("servoMiddle() was called\n");
-    //system("echo P1-3=180 > /dev/servoblaster");
+    //system("echo P1-24=180 > /dev/servoblaster");
 
-    sprintf(str1, "P1-3=180\n");
+    sprintf(str1, "P1-24=180\n");
     write(fd_sb, str1, strlen(str1)); 
 
 }
@@ -53,10 +53,10 @@ void servoMiddle()
 void servoClose()
 {
     //printf("servoClose() was called\n");
-    //system("echo P1-3=0> /dev/servoblaster");
-    sprintf(str1, "P1-3=0\n");
+    //system("echo P1-24=0> /dev/servoblaster");
+    sprintf(str1, "P1-24=0\n");
     write(fd_sb, str1, strlen(str1));
-    sprintf(str2, "P1-5=0\n");
+    sprintf(str2, "P1-26=0\n");
     write(fd_sb, str2, strlen(str2));
 }
 
